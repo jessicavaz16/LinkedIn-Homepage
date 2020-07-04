@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
 
-/*RESET AND INITIAL STYLES*/
-
 * {
   margin: 0;
   padding: 0;
@@ -11,9 +9,6 @@
 body {
   background: #f5f5f5;
   font-family: "Source Sans Pro", sans-serif;
-  /* propriedades para a fonte ficar mais legível */
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
 }
 
 input,
@@ -26,133 +21,296 @@ a {
   text-decoration: none;
 }
 
-html {
-  box-sizing: border-box;
+/* HEADER*/
+
+#header-picture-menu {
+  display: none;
 }
 
-i:hover,
-.icon-label:hover {
-  color: white;
+#bar {
+  display: none;
 }
-.header {
-  padding: 0 20%;
-  background-color: #283e4a;
+header#main-header {
   height: 52px;
-  width: 100%;
-  margin: auto;
-  display: flex;
-}
-
-.left-header {
-  display: flex;
-  /* align-self: flex-start; */
-}
-
-.right-header {
-  display: flex;
-  margin-left: auto;
-}
-
-.link-icon {
-  height: 34px;
-  width: 34px;
-  border-radius: 3px;
-}
-
-.logo {
-  padding-top: 9px;
-  margin-right: 12px;
-}
-
-.Search-form {
-  padding-top: 9px;
-  margin: 0 32px 0 0;
-  min-width: 280px;
-}
-
-.search {
-  width: 100%;
-  border: none;
-  border-radius: 2px;
-  background-color: #e1e9ee;
-  padding: 0 8px 0 28px;
-  line-height: 34px;
-  color: #283e4a;
-  font-size: 15px;
-  font-family: Arial;
-  font-weight: 400;
-  height: 34px;
-  background-image: url("images/search-icon.png");
-  background-position: 6px 6px;
-  background-size: 20px;
-  background-repeat: no-repeat;
-}
-
-.nav {
-  display: inline-flex;
-  padding-top: 9px;
-  border-right: 1px solid #5c6f7c;
-}
-
-.nav-internal {
+  position: fixed;
+  background: #283c4a;
+  width: 100vw;
   display: flex;
   justify-content: center;
-  text-align: center;
-  height: 44px;
-  width: 90px;
-  margin-left: 0px;
+  z-index: 1;
 }
 
-.icon-size {
+header#main-header > div {
+  width: 1188px;
+  padding-left: 24px;
+  padding-right: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header#main-header > div > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+header#main-header > div > div > span {
+  display: none;
+}
+
+header#main-header > div > div > img#header-logo {
+  width: 38px;
+  height: 38px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+header#main-header > div div input {
+  font-weight: bold;
+  background: #e1e9ee;
+  border: none;
+  border-radius: 2px;
+  font-size: 13px;
+  height: 34px;
+  max-width: 280px;
+  flex: 1;
+  color: rgba(40, 62, 74, 0.75);
+  padding-left: 10px;
+}
+
+header#main-header > div > div div {
+  display: flex;
+  flex: 1;
+  max-width: 280px;
+  position: relative;
+}
+
+header#main-header > div > div div input:focus {
+  background: #fff;
+}
+
+header#main-header > div div div span#search-icon {
+  position: absolute;
+  display: inline-flex;
+  left: 10px;
+  top: 12px;
+  font-size: 12px;
+  color: #283e4a;
+}
+
+header#main-header > div div div span#search-button {
+  display: none;
+  position: absolute;
+  right: 0;
+  padding: 9px;
+  background: #e1e9ee;
+  color: #0084bf;
+  border-radius: 2px;
+}
+
+header#main-header > div nav {
+  margin-right: 17px;
+}
+
+header#main-header > div nav ul {
+  display: flex;
+  align-items: flex-end;
+}
+
+header#main-header > div nav ul li {
+  color: #c7d1d8;
+  display: inline-block;
+  height: 52px;
+}
+
+header#main-header > div nav ul li div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80px;
+  font-size: 20px;
+  height: 100%;
+  padding-bottom: 3px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+header#main-header > div nav ul li div:hover {
+  color: #fff;
+}
+
+header#main-header > div nav ul li div.selected {
+  border-bottom: solid 2px #fff;
+  color: #fff;
+}
+
+header#main-header > div nav ul li div#home {
+  position: relative;
+}
+
+header#main-header > div nav ul li div#home::after {
+  position: absolute;
+  right: 23px;
+  top: 5px;
+  width: 13px;
+  height: 13px;
+  background: #d11124;
+  border: 2px solid #283e4a;
+  content: "";
+  border-radius: 50%;
+}
+
+header#main-header > div nav ul li div#right-border {
+  border-right: solid 1px rgba(255, 255, 255, 0.3);
+}
+
+header#main-header > div nav ul li div img {
   height: 24px;
   width: 24px;
-  color: #c7d1d8;
-  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid #e1e9ee;
 }
 
-.link_internal {
-  text-decoration: none;
-  font-family: Arial;
+header#main-header > div nav ul li div a {
   font-size: 13px;
-}
-
-.icon-label {
-  color: #c7d1d8;
-}
-
-.pic {
-  border: 1px solid #c5cfd7;
-  border-radius: 15px;
-}
-
-.nav2 {
-  display: flex;
-  padding-top: 9px;
-}
-
-.link_internal-2 {
-  text-decoration: none;
-  font-family: Arial;
-  font-size: 13px;
-  color: #d1c69f;
-}
-
-.nav-internal-2 {
-  width: 80px;
+  width: 100px;
   text-align: center;
+  padding-bottom: 7px;
+  color: #d3d2a1;
+  margin-left: 20px;
+  line-height: 1.2;
 }
 
-ul {
-  list-style: none;
+header#main-header > div nav ul li div a:hover {
+  text-decoration: underline;
+}
+
+header#main-header > div nav ul li div span.nav-item-text {
+  font-size: 13px;
+}
+
+header#main-header > div nav ul li div span.nav-item-text span {
+  margin-left: 4px;
+}
+
+/* HEADER MEDIA QUERY*/
+
+@media only screen and (max-width: 1047px) {
+  header#main-header > div nav ul li div {
+    width: 45px;
+    justify-content: center;
+  }
+
+  header#main-header > div nav ul li div.selected {
+    border-style: none;
+  }
+
+  header#main-header > div nav ul li div span.nav-item-text {
+    display: none;
+  }
+
+  header#main-header > div nav ul li div a {
+    padding-bottom: 0;
+  }
+
+  header#main-header > div nav ul li#premium {
+    margin: 0 20px;
+  }
+
+  header#main-header > div nav ul li div#home::after {
+    right: 5px;
+    top: 10px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header#main-header > div {
+    padding-right: 14px;
+  }
+
+  header#main-header > div nav {
+    display: none;
+  }
+
+  header#main-header > div > div > img#header-logo {
+    display: none;
+  }
+
+  header#main-header > div > div > img#header-picture-menu {
+    display: block;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: inset 0 1.5px 3px 0 rgba(0, 0, 0, 0.15),
+      0 1.5px 3px 0 rgba(0, 0, 0, 0.15);
+    background-color: #c7d1d8;
+    cursor: pointer;
+    margin-right: 25px;
+  }
+  #bar {
+    display: block;
+  }
+  header#main-header > div > div > span#header-picture-menu-bars {
+    display: block;
+    position: absolute;
+    left: 25px;
+    top: 26px;
+    color: #283c4a;
+    background: #fff;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f6f6f6;
+    text-align: center;
+  }
+
+  header#main-header > div > div > span#header-picture-menu-bars span {
+    margin-top: 5px;
+  }
+
+  header#main-header > div > div > span {
+    display: block;
+    color: #c7d1d8;
+    width: 38px;
+    font-size: 26px;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-left: 23px;
+  }
+
+  header#main-header > div > div > span:hover {
+    color: #fff;
+  }
+
+  header#main-header > div > div div {
+    max-width: 100%;
+    flex-shrink: 1;
+    width: 0;
+  }
+
+  header#main-header > div div input {
+    max-width: 100%;
+    width: 0;
+  }
+
+  header#main-header > div div input {
+    max-width: 100%;
+    width: 0;
+  }
 }
 
 div.postcontainer {
   width: 50%;
   margin: 0 auto;
-  padding: 15px 0px;
+  padding: 80px 0px;
 }
 
-/*main container > MAIN SECTION*/
+/*MAIN SECTION*/
 
 .container > div#main-wrapper {
   display: flex;
@@ -169,7 +327,7 @@ div.postcontainer main#main-section {
   width: 80%;
 }
 
-/*main container > main section > SHARE BOX & FEED SORT*/
+/* SHARE BOX & FEED SORT*/
 
 main#main-section div#share-box {
   background: #fff;
@@ -279,7 +437,8 @@ main#main-section div#feed-sort button span.fas {
   font-size: 18px;
   padding: 0 2px;
 }
-/*main container > main section > FEED POSTS*/
+
+/*FEED POSTS*/
 
 main#main-section article {
   display: flex;
@@ -529,7 +688,7 @@ main#main-section
   font-size: 18px;
 }
 
-/*container > CONTAINER MEDIA QUERY*/
+/*CONTAINER MEDIA QUERY*/
 
 @media only screen and (max-width: 1600px) {
   div.postcontainer {
