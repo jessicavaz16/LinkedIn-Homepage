@@ -1,343 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LinkedIn</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="index.js"></script>
-    <script src="https://kit.fontawesome.com/a6f7e36ea4.js" crossorigin="anonymous"></script>
-    <link href=https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-</head>
-
-<body>
-   <div class = "container">
-       <div class = "header">
-
-            <div class="left-header">
-                <div class="logo">
-                    <img class="link-icon" src="images/linkin-icon.png">
-                </div>
-                <form class="Search-form">
-                    <input class="search" type="text" name="Search" placeholder="Search">
-                </form>
-
-            </div>
-
-            <div class="right-header">
-                <ul class="nav">
-                    <li class="nav-internal">
-                        <a class="link_internal" href="#">
-                            <div class="icon-size">
-                                <i class="fa fa-home fa-lg home-icon" aria-hidden="true"></i>
-                            </div>
-
-                            <div class="icon-label">
-                                Home
-                            </div>
-
-                        </a>
-                    </li>
-                    <li class="nav-internal">
-                        <a class="link_internal" href="#">
-                            <div class="icon-size">
-                                <i class="fa fa-users fa-lg" aria-hidden="true"></i>
-
-                            </div>
-
-                            <span class="icon-label">
-                                My Network
-                            </span>
-
-                        </a>
-                    </li>
-                    <li class="nav-internal">
-                        <a class="link_internal" href="#">
-                            <div class="icon-size">
-                                <i class="fas fa-briefcase fa-lg"></i>
-
-
-                            </div>
-                            <div class="icon-label">
-                                Jobs
-                            </div>
-                        </a>
-
-                    </li>
-                    <li class="nav-internal">
-                        <a class="link_internal" href="#">
-                            <div class="icon-size">
-                                <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
-                            </div>
-                            <div class="icon-label">
-                                Messaging
-                            </div>
-                        </a>
-
-                    </li>
-                    <li class="nav-internal">
-                        <a class="link_internal" href="#">
-                            <div class="icon-size">
-                                <i class="fa fa-bell fa-lg" aria-hidden="true"></i>
-                            </div>
-                            <div class="icon-label">
-                                Notifications
-                            </div>
-                        </a>
-
-                    </li>
-                    <li class="nav-internal">
-                        <a class="link_internal" href="#">
-                            <div class="icon-size">
-                                <img src="images/profile-pic.jpg" class="pic" alt="" height="24" width="24">
-                            </div>
-                            <div class="icon-label">
-                                <span>
-                                    Me 
-                                </span>
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                <span>
-                                    
-                                </span>
-                            </div>
-                        </a>
-
-                    </li>
-                </ul>
-                <ul class="nav2">
-                    <li class="nav-internal">
-                        <a class="link_internal" href="#">
-                            <div class="icon-size">
-                                <i class="fa fa-th fa-lg" aria-hidden="true"></i>
-
-                            </div>
-                            <div class="icon-label">
-                                <span>
-                                    Work 
-                                </span>
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                <span>
-                                    
-                                </span>
-                            </div>
-                        </a>
-
-                    </li>
-                    <li class="nav-internal-2">
-                        <a class="link_internal-2" href="#">
-                            Try Premium for Free
-
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    <script
+      src="https://kit.fontawesome.com/a6f7e36ea4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+    href=https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="left-header">
+          <div class="logo">
+            <img class="link-icon" src="images/linkin-icon.png" />
+          </div>
+          <form class="Search-form">
+            <input
+              class="search"
+              type="text"
+              name="Search"
+              placeholder="Search"
+            />
+          </form>
         </div>
-         <div class="postcontainer">
-                <div id="main-wrapper">
-                    <main id="main-section">
-                        <div id="share-box">
-                            <div id="button-box">
-                                <button id="btn-post">
-                                    <span class="fas fa-edit"></span>
-                                    <span id="btn-text">Start a post</span>
-                                </button>
-                                <button id="btn-picture">
-                                    <span class="fas fa-camera"></span>
-                                </button>
-                                <button id="btn-video">
-                                    <span class="fas fa-video"></span>
-                                </button>
-                                <button id="btn-document">
-                                    <span class="fas fa-file"></span>
-                                </button>
-                            </div>
-                            <div id="link-box">
-                                <a href="#">Write an article</a>
-                                <span>on LinkedIn</span>
-                            </div>
-                        </div>
-                        <div id="feed-sort">
-                            <hr />
-                            <button>
-                                <span>Sort by:</span>
-                                <strong>Top</strong>
-                                <span class="fas fa-sort-down"></span>
-                            </button>
-                        </div>
-                        <article>
-                            <div id="post-author">
-                                <a href="#">
-                                    <div>
-                                        <img id="linkinimg"
-                                            src= "images/linkin-icon.png"
-                                            alt=""
-                                        />
-                                        <div>
-                                            <div>
-                                                <strong id="post-author-name"
-                                                    >Linkedin</strong>
-                                                
-                                            </div>
-                                            <span
-                                                >12,107,982 followers</span
-                                            >
-                                            <span>Promoted</span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div>
-                                    <span class="fas fa-circle"></span>
-                                    <span class="fas fa-circle"></span>
-                                    <span class="fas fa-circle"></span>
-                                </div>
-                            </div>
-                            <div id="post-data">
-                                <p>While many industries have been hit hard by COVID-19, some are on the rise. Here are ten roles that are 
-                                in-demand today and the skills to help you land them:
-                                <br><br><br><a href="#"> https://lnkd.in/dBb_Cqb </a><br></p>
-                                <p id="post-translation">
-                                    <button>See translation</button>
-                                </p>
-                                <img src="images/linkedin-post1.png" alt="" />
-                            </div>
-                            <div id="post-interactions">
-                                <div id="interactions-amount">
-                                    <span
-                                        id="like-icon"
-                                        class="fas fa-thumbs-up fa-flip-horizontal"
-                                    ></span>
-                                    <span
-                                        id="heart-icon"
-                                        class="fas fa-heart"
-                                    ></span>
-                                    <span
-                                        id="idea-icon"
-                                        class="fas fa-lightbulb"
-                                    ></span>
-                                    <span id="amount-info"
-                                        >759 <span>&nbsp;·&nbsp;</span> 11
-                                        Comments</span
-                                    >
-                                </div>
-                                <div id="interactions-btns">
-                                    <button>
-                                        <span
-                                            class="far fa-thumbs-up fa-flip-horizontal"
-                                        ></span>
-                                        <span>Like</span>
-                                    </button>
-                                    <button>
-                                        <span
-                                            class="far fa-comment-dots fa-flip-horizontal"
-                                        ></span>
-                                        <span>Comment</span>
-                                    </button>
-                                    <button>
-                                        <span class="far fa-share-square"></span>
-                                        <span>Share</span>
-                                    </button>
-                                    <button>
-                                        <span class="far fa-paper-plane"></span>
-                                        <span>Send</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div id="post-author">
-                                <a href="#">
-                                    <div>
-                                        <img
-                                            src="images/user2.png"
-                                            alt=""
-                                        />
-                                        <div>
-                                            <div>
-                                                <strong id="post-author-name"
-                                                    >Tezi Khan</strong
-                                                >
-                                                <span>
-                                                    <span>&nbsp;·&nbsp;</span>
-                                                    1st</span
-                                                >
-                                            </div>
-                                            <span>Software Engineer</span>
-                                            <span>2d</span>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div>
-                                    <span class="fas fa-circle"></span>
-                                    <span class="fas fa-circle"></span>
-                                    <span class="fas fa-circle"></span>
-                                </div>
-                            </div>
-                            <div id="post-data">
-                                <p>
-                                    Which CSS framework is good for Angular 2+ apart from bootstrap any suggestions?
-                                </p>
-                                <p id="post-translation">
-                                    <button>See translation</button>
-                                </p>
-                            
-                            </div>
-                            <div id="post-interactions">
-                                <div id="interactions-amount">
-                                    <span
-                                        id="like-icon"
-                                        class="fas fa-thumbs-up fa-flip-horizontal"
-                                    ></span>
-                                    
-                                    <span id="amount-info"
-                                        >6 <span>&nbsp;·&nbsp;</span> 8
-                                        Comments</span
-                                    >
-                                </div>
-                                <div id="interactions-btns">
-                                    <button>
-                                        <span
-                                            class="far fa-thumbs-up fa-flip-horizontal"
-                                        ></span>
-                                        <span>Like</span>
-                                    </button>
-                                    <button>
-                                        <span
-                                            class="far fa-comment-dots fa-flip-horizontal"
-                                        ></span>
-                                        <span>Comment</span>
-                                    </button>
-                                    <button>
-                                        <span class="far fa-share-square"></span>
-                                        <span>Share</span>
-                                    </button>
-                                    <button>
-                                        <span class="far fa-paper-plane"></span>
-                                        <span>Send</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </article>
-                    </main>
+
+        <div class="right-header">
+          <ul class="nav">
+            <li class="nav-internal">
+              <a class="link_internal" href="#">
+                <div class="icon-size">
+                  <i class="fa fa-home fa-lg home-icon" aria-hidden="true"></i>
                 </div>
+
+                <div class="icon-label">
+                  Home
+                </div>
+              </a>
+            </li>
+            <li class="nav-internal">
+              <a class="link_internal" href="#">
+                <div class="icon-size">
+                  <i class="fa fa-users fa-lg" aria-hidden="true"></i>
+                </div>
+
+                <span class="icon-label">
+                  My Network
+                </span>
+              </a>
+            </li>
+            <li class="nav-internal">
+              <a class="link_internal" href="#">
+                <div class="icon-size">
+                  <i class="fas fa-briefcase fa-lg"></i>
+                </div>
+                <div class="icon-label">
+                  Jobs
+                </div>
+              </a>
+            </li>
+            <li class="nav-internal">
+              <a class="link_internal" href="#">
+                <div class="icon-size">
+                  <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+                </div>
+                <div class="icon-label">
+                  Messaging
+                </div>
+              </a>
+            </li>
+            <li class="nav-internal">
+              <a class="link_internal" href="#">
+                <div class="icon-size">
+                  <i class="fa fa-bell fa-lg" aria-hidden="true"></i>
+                </div>
+                <div class="icon-label">
+                  Notifications
+                </div>
+              </a>
+            </li>
+            <li class="nav-internal">
+              <a class="link_internal" href="#">
+                <div class="icon-size">
+                  <img
+                    src="images/profile-pic.jpg"
+                    class="pic"
+                    alt=""
+                    height="24"
+                    width="24"
+                  />
+                </div>
+                <div class="icon-label">
+                  <span>
+                    Me
+                  </span>
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  <span> </span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav2">
+            <li class="nav-internal">
+              <a class="link_internal" href="#">
+                <div class="icon-size">
+                  <i class="fa fa-th fa-lg" aria-hidden="true"></i>
+                </div>
+                <div class="icon-label">
+                  <span>
+                    Work
+                  </span>
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  <span> </span>
+                </div>
+              </a>
+            </li>
+            <li class="nav-internal-2">
+              <a class="link_internal-2" href="#">
+                Try Premium for Free
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="postcontainer">
+        <div id="main-wrapper">
+          <main id="main-section">
+            <div id="share-box">
+              <div id="button-box">
+                <button id="btn-post">
+                  <span class="fas fa-edit"></span>
+                  <span id="btn-text">Start a post</span>
+                </button>
+                <button id="btn-picture">
+                  <span class="fas fa-camera"></span>
+                </button>
+                <button id="btn-video">
+                  <span class="fas fa-video"></span>
+                </button>
+                <button id="btn-document">
+                  <span class="fas fa-file"></span>
+                </button>
+              </div>
+              <div id="link-box">
+                <a href="#">Write an article</a>
+                <span>on LinkedIn</span>
+              </div>
             </div>
-                  
+            <div id="feed-sort">
+              <hr />
+              <button>
+                <span>Sort by:</span>
+                <strong>Top</strong>
+                <span class="fas fa-sort-down"></span>
+              </button>
+            </div>
+            <article>
+              <div id="post-author">
+                <a href="#">
+                  <div>
+                    <img id="linkinimg" src="images/linkin-icon.png" alt="" />
+                    <div>
+                      <div>
+                        <strong id="post-author-name">Linkedin</strong>
+                      </div>
+                      <span>12,107,982 followers</span>
+                      <span>Promoted</span>
+                    </div>
+                  </div>
+                </a>
+                <div>
+                  <span class="fas fa-circle"></span>
+                  <span class="fas fa-circle"></span>
+                  <span class="fas fa-circle"></span>
+                </div>
+              </div>
+              <div id="post-data">
+                <p>
+                  While many industries have been hit hard by COVID-19, some are
+                  on the rise. Here are ten roles that are in-demand today and
+                  the skills to help you land them: <br /><br /><br /><a
+                    href="#"
+                  >
+                    https://lnkd.in/dBb_Cqb </a
+                  ><br />
+                </p>
 
-                
+                <p id="post-translation">
+                  <button>See translation</button>
+                </p>
+                <img src="images/linkedin-post1.png" alt="" />
+              </div>
+              <div id="post-interactions">
+                <div id="interactions-amount">
+                  <span
+                    id="like-icon"
+                    class="fas fa-thumbs-up fa-flip-horizontal"
+                  ></span>
+                  <span id="heart-icon" class="fas fa-heart"></span>
+                  <span id="idea-icon" class="fas fa-lightbulb"></span>
+                  <span id="amount-info"
+                    >759 <span>&nbsp;·&nbsp;</span> 11 Comments</span
+                  >
+                </div>
+                <div id="interactions-btns">
+                  <button>
+                    <span class="far fa-thumbs-up fa-flip-horizontal"></span>
+                    <span>Like</span>
+                  </button>
+                  <button>
+                    <span class="far fa-comment-dots fa-flip-horizontal"></span>
+                    <span>Comment</span>
+                  </button>
+                  <button>
+                    <span class="far fa-share-square"></span>
+                    <span>Share</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div id="post-author">
+                <a href="#">
+                  <div>
+                    <img src="images/user2.png" alt="" />
+                    <div>
+                      <div>
+                        <strong id="post-author-name">Tezi Khan</strong>
+                        <span>
+                          <span>&nbsp;·&nbsp;</span>
+                          1st</span
+                        >
+                      </div>
+                      <span>Software Engineer</span>
+                      <span>2d</span>
+                    </div>
+                  </div>
+                </a>
+                <div>
+                  <span class="fas fa-circle"></span>
+                  <span class="fas fa-circle"></span>
+                  <span class="fas fa-circle"></span>
+                </div>
+              </div>
+              <div id="post-data">
+                <p>
+                  Which CSS framework is good for Angular 2+ apart from
+                  bootstrap any suggestions?
+                </p>
+                <p id="post-translation">
+                  <button>See translation</button>
+                </p>
+              </div>
+              <div id="post-interactions">
+                <div id="interactions-amount">
+                  <span
+                    id="like-icon"
+                    class="fas fa-thumbs-up fa-flip-horizontal"
+                  ></span>
 
-
-
-
-
-
-
-
-
-
-
-
-                
-          
-   </div>
-</body>
+                  <span id="amount-info"
+                    >6 <span>&nbsp;·&nbsp;</span> 8 Comments</span
+                  >
+                </div>
+                <div id="interactions-btns">
+                  <button>
+                    <span class="far fa-thumbs-up fa-flip-horizontal"></span>
+                    <span>Like</span>
+                  </button>
+                  <button>
+                    <span class="far fa-comment-dots fa-flip-horizontal"></span>
+                    <span>Comment</span>
+                  </button>
+                  <button>
+                    <span class="far fa-share-square"></span>
+                    <span>Share</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
