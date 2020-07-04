@@ -18,119 +18,85 @@
 
   <body>
     <div class="container">
-      <div class="header">
-        <div class="left-header">
-          <div class="logo">
-            <img class="link-icon" src="images/linkin-icon.png" />
-          </div>
-          <form class="Search-form">
-            <input
-              class="search"
-              type="text"
-              name="Search"
-              placeholder="Search"
+      <header id="main-header">
+        <div>
+          <div>
+            <img id="header-logo" src="images/linkedin.png" alt="LinkedIn" />
+            <img
+              id="header-picture-menu"
+              src="images/profile-pic.jpg"
+              alt="Profile picture"
             />
-          </form>
+            <span id="header-picture-menu-bars">
+              <span class="fas fa-bars" id="bar"></span>
+            </span>
+
+            <div>
+              <input id="search" type="text" placeholder="       Search" />
+              <span id="search-icon" class="fas fa-search"></span>
+              <span id="search-button" class="fas fa-search"></span>
+            </div>
+            <span class="fas fa-comments" id="sym"></span>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <div id="home" class="selected">
+                  <span class="fas fa-home"></span>
+                  <span class="nav-item-text">Home</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span class="fas fa-user-friends"></span>
+                  <span class="nav-item-text">My Network</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span class="fas fa-suitcase"></span>
+                  <span class="nav-item-text">Jobs</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span class="fas fa-envelope"></span>
+                  <span class="nav-item-text">Messaging</span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span class="fas fa-bell"></span>
+                  <span class="nav-item-text">Notifications</span>
+                </div>
+              </li>
+              <li>
+                <div id="right-border">
+                  <img src="images/profile-pic.jpg" alt="Profile picture" />
+
+                  <span class="nav-item-text">
+                    Me<span class="fas fa-caret-down"> </span
+                  ></span>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span class="fas fa-th"></span>
+
+                  <span class="nav-item-text"
+                    >Work<span class="fas fa-caret-down"> </span
+                  ></span>
+                </div>
+              </li>
+              <li id="premium">
+                <div>
+                  <a href="#">Try Premium Free for 1 Month</a>
+                </div>
+              </li>
+            </ul>
+          </nav>
         </div>
-
-        <div class="right-header">
-          <ul class="nav">
-            <li class="nav-internal">
-              <a class="link_internal" href="#">
-                <div class="icon-size">
-                  <i class="fa fa-home fa-lg home-icon" aria-hidden="true"></i>
-                </div>
-
-                <div class="icon-label">
-                  Home
-                </div>
-              </a>
-            </li>
-            <li class="nav-internal">
-              <a class="link_internal" href="#">
-                <div class="icon-size">
-                  <i class="fa fa-users fa-lg" aria-hidden="true"></i>
-                </div>
-
-                <span class="icon-label">
-                  My Network
-                </span>
-              </a>
-            </li>
-            <li class="nav-internal">
-              <a class="link_internal" href="#">
-                <div class="icon-size">
-                  <i class="fas fa-briefcase fa-lg"></i>
-                </div>
-                <div class="icon-label">
-                  Jobs
-                </div>
-              </a>
-            </li>
-            <li class="nav-internal">
-              <a class="link_internal" href="#">
-                <div class="icon-size">
-                  <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
-                </div>
-                <div class="icon-label">
-                  Messaging
-                </div>
-              </a>
-            </li>
-            <li class="nav-internal">
-              <a class="link_internal" href="#">
-                <div class="icon-size">
-                  <i class="fa fa-bell fa-lg" aria-hidden="true"></i>
-                </div>
-                <div class="icon-label">
-                  Notifications
-                </div>
-              </a>
-            </li>
-            <li class="nav-internal">
-              <a class="link_internal" href="#">
-                <div class="icon-size">
-                  <img
-                    src="images/profile-pic.jpg"
-                    class="pic"
-                    alt=""
-                    height="24"
-                    width="24"
-                  />
-                </div>
-                <div class="icon-label">
-                  <span>
-                    Me
-                  </span>
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                  <span> </span>
-                </div>
-              </a>
-            </li>
-          </ul>
-          <ul class="nav2">
-            <li class="nav-internal">
-              <a class="link_internal" href="#">
-                <div class="icon-size">
-                  <i class="fa fa-th fa-lg" aria-hidden="true"></i>
-                </div>
-                <div class="icon-label">
-                  <span>
-                    Work
-                  </span>
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                  <span> </span>
-                </div>
-              </a>
-            </li>
-            <li class="nav-internal-2">
-              <a class="link_internal-2" href="#">
-                Try Premium for Free
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      </header>
       <div class="postcontainer">
         <div id="main-wrapper">
           <main id="main-section">
@@ -187,9 +153,7 @@
                 <p>
                   While many industries have been hit hard by COVID-19, some are
                   on the rise. Here are ten roles that are in-demand today and
-                  the skills to help you land them: <br /><br /><br /><a
-                    href="#"
-                  >
+                  the skills to help you land them: <br /><br /><a href="#">
                     https://lnkd.in/dBb_Cqb </a
                   ><br />
                 </p>
