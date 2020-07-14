@@ -340,7 +340,7 @@ hr{
 .moon{
   color: #FFF;
   size: 30px;
-  padding-right: 235px;
+  padding-right: 225px;
   padding-bottom: 32px;
   margin-bottom: 35;
 }
@@ -348,7 +348,7 @@ hr{
 .mbcaret{
   size: 20px;
   display: inline-block;
- padding-left: 210px;
+ padding-left: 200px;
 }
 
 /* HEADER MEDIA QUERY*/
