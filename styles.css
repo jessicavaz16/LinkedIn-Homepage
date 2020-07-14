@@ -229,7 +229,7 @@ header#main-header > div nav ul li div span.nav-item-text span {
 
 .side-nav__container {
   position: relative;
-  width: 85%;
+  width: 75%;
   max-width: 400px;
   background: #FFF;
   height: 100%;
@@ -340,7 +340,7 @@ hr{
 .moon{
   color: #FFF;
   size: 30px;
-  padding-right: 275px;
+  padding-right: 235px;
   padding-bottom: 32px;
   margin-bottom: 35;
 }
@@ -348,7 +348,7 @@ hr{
 .mbcaret{
   size: 20px;
   display: inline-block;
- padding-left: 250px;
+ padding-left: 210px;
 }
 
 /* HEADER MEDIA QUERY*/
