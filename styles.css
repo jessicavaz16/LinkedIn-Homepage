@@ -228,7 +228,7 @@ header#main-header > div nav ul li div span.nav-item-text span {
 }
 
 .side-nav__container {
-  position: relative;
+  position: fixed;
   width: 75%;
   max-width: 400px;
   background: #FFF;
