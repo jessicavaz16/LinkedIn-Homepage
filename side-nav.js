@@ -10,7 +10,7 @@ class SideNav {
     this.showSideNav = this.showSideNav.bind(this);
     this.hideSideNav = this.hideSideNav.bind(this);
     this.blockClicks = this.blockClicks.bind(this);
-    this.onTouchStart = this.onTouchStart.bind(this);
+    
     this.onTouchMove = this.onTouchMove.bind(this);
     this.onTouchEnd = this.onTouchEnd.bind(this);
     this.onTransitionEnd = this.onTransitionEnd.bind(this);
@@ -25,17 +25,12 @@ class SideNav {
     this.sideNavEl.addEventListener("click", this.hideSideNav);
     this.sideNavContainerEl.addEventListener("click", this.blockClicks);
 
-    document.addEventListener("touchstart", this.onTouchStart);
+    
     document.addEventListener("touchmove", this.onTouchMove);
     document.addEventListener("touchend", this.onTouchEnd);
   }
 
-  onTouchStart(evt) {
-    if (!this.sideNavEl.classList.contains("side-nav--visible")) return;
-
-    this.startX = evt.touches[0].pageX;
-    this.currentX = this.startX;
-  }
+  
   onTouchMove(evt) {
     this.currentX = evt.touches[0].pageX;
     const translatex = Math.min(0, this.currentX - this.startX);
